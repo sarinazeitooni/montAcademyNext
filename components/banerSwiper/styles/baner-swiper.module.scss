@@ -5,6 +5,7 @@
     .mobile-view{
         display: none;
         @media screen and (max-width: 768px){
+            padding-top: 45px;
             display: block;
         }
     }

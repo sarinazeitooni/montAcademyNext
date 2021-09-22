@@ -442,3 +442,4 @@ export const login = {
     newUser: 'کاربر جدید هستید؟',
     signUp: 'ثبت نام در منتا'
 }
+export const icons = ['180', '152', '167', '120'];

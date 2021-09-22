@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from "react";
-import {images , montaCademyClassList , schedule , montaCademyOptions , FooterData} from "../public/data/data";
+import {images , montaCademyClassList , schedule , montaCademyOptions , FooterData,icons} from "../public/data/data";
 import HeaderContainer from "../components/header/HeaderContainer";
 import BannerSwiper from "../components/banerSwiper/BannerSwiper";
 import GetInfoForm from "../components/getInfoForm/GetInfoForm";
@@ -9,10 +9,9 @@ import Schedule from "../components/montaAcademySchedule/Schedule";
 import WhyMonta from "../components/whyMonta/WhyMonta";
 import FooterContainer from "../components/footer/FooterContainer";
 import {v4 as uuidv4} from "uuid";
-export default function Montacademy() {
+export default function MontAcademy() {
     const [time,setTime] = React.useState(false);
     setTimeout(function(){ setTime(true) }, 1500);
-    const icons = ['180', '152', '167', '120'];
     return (
         <div>
             <Head>
@@ -40,5 +39,4 @@ export default function Montacademy() {
                 </div>
             }
         </div>
-    )
-};
+    )};

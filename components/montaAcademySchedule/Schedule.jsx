@@ -16,7 +16,7 @@ const Schedule = ({title, items}) => {
                 </div>
                 {items && <div className={style['schedule-swiper']}>
                     <Swiper
-                        spaceBetween={1} slidesPerView={1} navigation>
+                        spaceBetween={1} slidesPerView={1} navigation={true}>
                     {
                         items.map((item) => {
                             return (

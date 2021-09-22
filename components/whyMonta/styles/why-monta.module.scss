@@ -48,7 +48,7 @@
       justify-content: space-around;
       margin: 0 6%;
       @media screen and (max-width: 1024px) {
-        margin: 0px 10px;
+        margin: 0 10px;
       }
       @media screen and (max-width: 768px) {
         flex-direction: column;
@@ -64,6 +64,15 @@
           background-color: $form-input-border;
           margin: 15px 0;
           cursor: pointer;
+          &:first-child{
+            margin: 0;
+            @media screen and (max-width: 768px) {
+              margin: 10px auto;
+            }
+          }
+          &.selected{
+            background-color: $submit-btn !important;
+          }
           @media screen and (max-width: 1024px) {
             font-size: 12px;
             padding: 0 10px;
@@ -94,6 +103,7 @@
           .option {
             display: inline-block;
             padding: 10px 25px 10px 40px;
+
             @media screen and (max-width: 1024px) {
               padding: 10px 5px 10px 0px;
             }
@@ -122,8 +132,4 @@
       }
     }
   }
-}
-.selected{
-  @extend .options;
-  background-color: $submit-btn !important;
 }

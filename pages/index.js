@@ -1,6 +1,7 @@
 import React from "react";
 import {v4 as uuidv4} from "uuid";
 import Head from "next/head";
+import {icons} from "../public/data/data";
 export default function Home(){
     return(
         <Head>
