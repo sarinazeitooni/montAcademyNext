@@ -3,7 +3,7 @@ import style from './styles/footer.module.scss';
 import {FooterBottom} from "./FooterBottom";
 const FooterContainer = ({data}) => {
     return (
-        <div className={style['footer-container']}>
+        <div className={style['footer-container']} id='footer'>
             <div className={style['columns-container']}>
                 <div className={style['column']}>
                     <img alt='monta-footer' className={style['monta']} src='https://www.monta.ir/landings/Footer//Monta_Footer.svg'/>

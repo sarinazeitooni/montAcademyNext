@@ -24,6 +24,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: $body-back;
+  scroll-behavior: smooth;
   font-family: iranYekan;
   .swiper-button-next, .swiper-button-prev {
     color: $navigation-btn;
