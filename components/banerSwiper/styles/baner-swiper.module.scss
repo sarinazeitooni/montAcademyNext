@@ -1,0 +1,16 @@
+.banner-swiper-container{
+    img {
+        width: 100%;
+    }
+    .mobile-view{
+        display: none;
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+    }
+    .desktop-view {
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+    }
+}

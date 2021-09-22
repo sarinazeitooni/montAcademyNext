@@ -1,0 +1,26 @@
+.monta-mobile{
+  display: none;
+  @media screen and (max-width:768px){
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+.column-mobile{
+  display: none;
+  img{
+    width: 30px;
+    height: 45px;
+  }
+  @media screen and (max-width:768px){
+    display: block;
+  }
+}
+.column-title-mobile{
+  display: none;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width:768px){
+    display: flex;
+  }
+}

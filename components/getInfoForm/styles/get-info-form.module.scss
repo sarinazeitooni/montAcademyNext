@@ -1,0 +1,141 @@
+@import 'styles/colors/colors';
+.get-info-form-container {
+    width: 100%;
+    background-color: $form-back;
+    height: 136px;
+    margin: -5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    font-family: iranYekan;
+    @media screen and (max-width: 768px) {
+        height: 109px;
+        top: -35px;
+    }
+    .form-title , .form-title-mobile{
+        line-height: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+        direction: rtl;
+    }
+    .form-title {
+        font-size: 16px;
+        padding: 26px 0;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .form-title-mobile{
+        display: none;
+        padding: 15px 0;
+        font-size: 14px;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+    .form-data-container {
+        @media screen and (max-width: 768px) {
+            display: block;
+            width: unset;
+        }
+        @media screen and (min-width: 2450px) {
+            width: 50%;
+        }
+        @media screen and (min-width: 2000px) and (max-width: 2450px) {
+            width: 60%;
+        }
+        @media screen and (min-width: 1440px) and (max-width: 2000px) {
+            width: 85%;
+        }
+        @media screen and (max-width: 2000px) {
+            width: 74%;
+        }
+        @media screen and (max-width: 1440px) {
+            width: 95%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            width: 97%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            width: 95%;
+        }
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .data-fields{
+            position: relative;
+            input,select,svg{
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+            select{
+                cursor: pointer;
+            }
+            svg{
+                position: absolute;
+                left: 4%;
+                color: $form-input-color;
+                top: 15%;
+            }
+            input , select , .submit{
+                appearance: none;
+                color: $form-input-color;
+                border-radius: 16px;
+                width: 307px;
+                height: 42px;
+                padding-right: 20px;
+                text-align: right;
+                outline: none;
+                font-size: 14px;
+                border: none;
+                font-family: iranYekan !important;
+                @media screen and (max-width:1800px){
+                    width: 225px;
+                }
+                @media screen and (max-width:1024px){
+                    width: 215px;
+                }
+                @media screen and (max-width:1000px){
+                    width: 145px;
+                }
+            }
+        }
+        .submit-mobile , .submit{
+            color: white;
+            padding: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            height: fit-content;
+            border-radius: 16px;
+            width: 240px;
+            text-align: center;
+            background-color: $submit-btn;
+        }
+        .submit-mobile{
+            @media screen and (max-width:1024px){
+                width: 75%;
+            }
+        }
+        .submit{
+            @media screen and (max-width: 768px) {
+                margin: 0 auto;
+                display: none;
+            }
+        }
+        .submit-mobile{
+            display: none;
+            @media screen and (max-width: 768px) {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+.error{
+    height: 42px !important;
+    border: 2px solid red!important;
+}

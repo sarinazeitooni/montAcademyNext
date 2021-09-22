@@ -1,0 +1,79 @@
+@import 'styles/colors/colors';
+.login-container {
+  background-color: $menuItemBack;
+  border: 1px solid $form-input-border;
+  border-radius: 12px;
+  margin: 105px auto;
+  width: 300px;
+  padding: 1.7rem 1rem;
+  direction: rtl;
+  font-family: iranYekan;
+  img {
+    width: 128px;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+.input-container{
+  margin: 0 0 5px 0;
+}
+  .input-title {
+    line-height: 23px;
+    text-align: right;
+    color: $input-title;
+    font-size: 12px;
+    display: inline;
+  }
+  .forgot-password {
+    display: inline;
+    text-align: left;
+    font-size: 10.2px;
+    margin-right: 28%;
+    color: $forgot-pass;
+  }
+  input {
+    text-align: center;
+    line-height: 23px;
+    width: 95%;
+    font-size: 10px;
+    border: 1px solid $login-border;
+    border-radius: 12px;
+    &::placeholder {
+      color: $login-placeholder;
+    }
+    &:focus-visible{
+      border: 1px solid black;
+    }
+  }
+  .login-btn {
+    color: white;
+    font-size: 18px;
+    margin: 15px auto;
+    display: block;
+    padding: 6px 35px;
+    cursor: pointer;
+    border-radius: 40983px;
+    background-color: $forgot-pass;
+    &:hover{
+      border: 1px solid $login-hover;
+      padding: 5px 34px;
+    }
+  }
+  .remember-container {
+    display: flex;
+    font-size: 12px;
+    width: 55%;
+    margin: 0 auto 20px auto;
+    .remember-check {
+      width: fit-content;
+    }
+  }
+  .new-member-container {
+    text-align: center;
+    font-size: 12px;
+    .sign-up {
+      cursor: pointer;
+      padding-right: 5px;
+      color: $forgot-pass;
+    }
+  }
+}

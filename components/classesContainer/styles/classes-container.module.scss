@@ -1,0 +1,36 @@
+.classes-main-container{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 26px 0;
+}
+.classes-container{
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    width: 67%;
+    direction: rtl;
+    @media screen and (min-width: 2450px) {
+        width: 50%;
+    }
+    @media screen and (min-width: 2000px) and (max-width: 2450px) {
+        width: 60%;
+    }
+    @media screen and (min-width: 1440px) and (max-width: 2000px) {
+        width: 85%;
+    }
+    @media screen and (max-width: 2000px) {
+        width: 74%;
+    }
+    @media screen and (max-width: 1440px) {
+        width: 95%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        width: 97%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        width: 95%;
+    }
+    @media screen and (max-width:768px){
+            width: 90%;
+    }
+}

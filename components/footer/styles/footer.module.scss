@@ -1,0 +1,140 @@
+@import 'styles/colors/colors';
+@import "footer-mobile.module";
+.footer-container {
+  background-color: white;
+  font-family: iranYekan;
+  direction: rtl;
+  padding-bottom: 10px;
+  hr {
+    width: 70%;
+    opacity: 0.17;
+    @media screen and (max-width:768px){
+      width: 90%;
+    }
+  }
+  .columns-container {
+    width: 70%;
+    margin: 20px auto 15px auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media screen and (max-width:1440px){
+      width: 80%;
+    }
+    @media screen and (max-width:768px){
+      flex-direction: column;
+      width: 92%;
+    }
+    .etemad{
+      @media screen and (max-width:768px){
+        display: none;
+      }
+    }
+    .column {
+      @media screen and (max-width:768px){
+        &:nth-child(4){
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .monta{
+        width: 75px;
+        margin-top: 28px;
+        @media screen and (max-width:1024px){
+          width: 70px;
+          margin-left: 20px;
+        }
+        @media screen and (max-width:768px){
+          display: none;
+        }
+      }
+
+      .column-title {
+        margin-bottom: 10px;
+        color: $footer;
+        font-weight: bold;
+        font-size: 15px;
+        @media screen and (max-width:768px){
+         display: none;
+        }
+      }
+      .links-container {
+        font-size: 12px;
+        display: grid;
+        margin-right: -10px;
+        grid-template-columns: auto auto;
+        @media screen and (max-width:768px){
+          display: flex;
+          justify-content: space-between;
+        }
+        @media screen and (max-width:425px){
+          width: 100%;
+        }
+        .link {
+          padding:9px 5px;
+          @media screen and (max-width:768px){
+            font-size: 10px;
+            &:nth-child(4){
+              display: none;
+            }
+          }
+        }
+      }
+      .icons-container {
+        margin-right: -9px;
+        display: flex;
+        justify-content: space-between;
+        .icon {
+          width: 23px;
+          margin: 13px 8px;
+          @media screen and (max-width:1024px){
+            width: 16px;
+          }
+        }
+      }
+      .communication-container {
+        font-size: 12px;
+        margin-top: 25px;
+        margin-right: -25px;
+        .tel-and-email {
+          display: flex;
+          @media screen and (max-width:768px){
+            margin-bottom: 30px;
+          }
+          img{
+            padding: 0px 15px;
+            margin: 0 0 -3px 0;
+          }
+        }
+        .address {
+          margin-top: 15px;
+          width: 401px;
+          display: flex;
+          @media screen and (min-width:1440px){
+            width: 401px;
+          }
+          @media screen and (max-width:1440px){
+            width: 275px;
+          }
+          @media screen and (max-width:768px){
+            margin-bottom: 30px;
+            font-size: 13px;
+            width:125%;
+          }
+          img{
+            display: flex;
+            align-self: flex-start;
+            padding: 5px 15px;
+          }
+          span{
+            line-height: 25px;
+            @media screen and (max-width:768px){
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

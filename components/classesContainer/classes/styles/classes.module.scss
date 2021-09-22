@@ -1,0 +1,101 @@
+@import 'styles/colors/colors';
+.class-container {
+  padding: 50px 0 40px 0;
+  margin: 0px 85px;
+  position: relative;
+  font-family: iranYekan;
+  @media screen and (max-width: 1750px) {
+    margin: 0;
+  }
+  &:last-child {
+    padding: 50px 0 75px 0;
+    @media screen and (max-width: 768px) {
+      padding: 30px 0;
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    margin: 0;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    padding: 20px 0;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: 75px auto 0 auto;
+    .swiper-button-next {
+      left: 50px;
+    }
+    .swiper-button-prev {
+      right: 20px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1110px) {
+      .swiper-slide{
+        &:first-child{
+          .card{
+            .teacher-img{
+              //width: 95%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .text-container {
+    background-color: white;
+    width: fit-content;
+    z-index: 10;
+    padding-right: 30px;
+    position: absolute;
+    @media screen and (max-width: 768px) {
+      margin: 0 15px;
+      padding-right: 0px;
+    }
+    h3 {
+      display: none;
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 21px;
+        padding-bottom: 5px;
+        display: block;
+      }
+    }
+    .class-title {
+      font-weight: bold;
+      line-height: 20px;
+      font-size: 20px;
+      display: inline-block;
+      @media screen and (max-width: 768px) {
+        display: none;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 21px;
+      }
+    }
+    .class-extraTitle {
+      line-height: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      padding-left: 10px;
+      color: $extra-title;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .line {
+    opacity: 0.35;
+    width: 100%;
+    top: 70px;
+    background-color: $line;
+    position: absolute;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
