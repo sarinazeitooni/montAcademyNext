@@ -25,7 +25,7 @@ const GetInfoForm = () => {
                 if(option!==0){
                     setOptionClass(style[''])
                     Submit();
-                }else setOptionClass(style['error'])
+                }else setOptionClass(style['error']);
             }else setNumberClass(style['error']);
         }else setNameClass(style['error']);
     }
