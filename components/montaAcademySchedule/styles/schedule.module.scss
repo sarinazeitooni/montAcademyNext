@@ -5,47 +5,51 @@
     display: block;
   }
 }
-.schedule-container {
-  margin: 0 auto;
-  width: 67%;
-  font-family: iranYekan;
-  background-color: white;
-  direction: rtl;
-  border-radius: 20px;
-  padding: 30px 0;
-  @media screen and (min-width: 2450px) {
-    width: 50%;
-  }
-  @media screen and (min-width: 2000px) and (max-width: 2450px) {
-    width: 60%;
-  }
-  @media screen and (min-width: 1440px) and (max-width: 2000px) {
-    width: 85%;
-  }
-  @media screen and (max-width: 2000px) {
-    width: 74%;
-  }
-  @media screen and (max-width: 1440px) {
-    width: 95%;
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1200px) {
-    width: 97%;
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1200px) {
-    width: 95%;
-  }
-  @media screen and (max-width: 768px){
-    display: none;
-  }
-  .schedule-title {
-    margin-right: 30px;
-    font-weight: 600;
-    font-size: 20px;
-  }
-  .schedule-swiper {
-    .schedule-img {
-      margin: 0 85px;
+.schedule-container-main{
+  background-color: $body-back;
+  padding: 5px 0;
+  .schedule-container {
+    margin: 0 auto;
+    width: 67%;
+    font-family: iranYekan;
+    background-color: white;
+    direction: rtl;
+    border-radius: 20px;
+    padding: 30px 0;
+    @media screen and (min-width: 2450px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 2000px) and (max-width: 2450px) {
+      width: 60%;
+    }
+    @media screen and (min-width: 1440px) and (max-width: 2000px) {
       width: 85%;
+    }
+    @media screen and (max-width: 2000px) {
+      width: 74%;
+    }
+    @media screen and (max-width: 1440px) {
+      width: 95%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      width: 97%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      width: 95%;
+    }
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+    .schedule-title {
+      margin-right: 30px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .schedule-swiper {
+      .schedule-img {
+        margin: 0 85px;
+        width: 85%;
+      }
     }
   }
 }

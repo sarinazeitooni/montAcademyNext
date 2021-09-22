@@ -11,6 +11,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --swiper-navigation-size: 25px !important;
   --toastify-color-light: #38b48b !important;
@@ -23,8 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: $body-back;
-  scroll-behavior: smooth;
+  background-color: white;
   font-family: iranYekan;
   .swiper-button-next, .swiper-button-prev {
     color: $navigation-btn;
@@ -63,7 +65,10 @@ body {
     img {
       margin: 0 auto;
       display: block;
-      width: 100%;
+      width: 50%;
+      @media screen and (max-width:1300px){
+        width: 100%;
+      }
     }
   } .icon-container{
     margin: 0 auto;

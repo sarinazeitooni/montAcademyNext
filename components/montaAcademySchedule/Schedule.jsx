@@ -9,7 +9,7 @@ import ScheduleMobile from "./ScheduleMobile";
 SwiperCore.use([Navigation]);
 const Schedule = ({title, items}) => {
     return (
-        <React.Fragment>
+        <div className={style['schedule-container-main']}>
             <div className={style['schedule-container']}>
                 <div className={style['schedule-title']}>
                     {title}
@@ -32,7 +32,7 @@ const Schedule = ({title, items}) => {
             <div className={style['schedule-mobile']}>
                 <ScheduleMobile/>
             </div>
-        </React.Fragment>
+        </div>
     )
 }
 export default Schedule;

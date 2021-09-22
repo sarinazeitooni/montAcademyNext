@@ -9,7 +9,7 @@ import Schedule from "../components/montaAcademySchedule/Schedule";
 import WhyMonta from "../components/whyMonta/WhyMonta";
 import FooterContainer from "../components/footer/FooterContainer";
 import {v4 as uuidv4} from "uuid";
-export default function Home() {
+export default function Montacademy() {
     const [time,setTime] = React.useState(false);
     setTimeout(function(){ setTime(true) }, 1500);
     const icons = ['180', '152', '167', '120'];
