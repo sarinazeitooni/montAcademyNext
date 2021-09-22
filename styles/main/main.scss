@@ -9,14 +9,8 @@
   font-family: "iranYekan";
   src: url("../../public/fonts/iranyekan/woff/iranyekanwebregularfanum.woff") format('woff');
 }
-* {
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
 :root {
-  --swiper-navigation-size: 25px !important;
+  --swiper-navigation-size: 24px !important;
   --toastify-color-light: #38b48b !important;
   --toastify-text-color-light: white !important;
   --toastify-font-family: iranYekan !important;
@@ -24,54 +18,67 @@ html {
     --swiper-navigation-size: 17px !important;
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-family: iranYekan;
-  .swiper-button-next, .swiper-button-prev {
-    color: $navigation-btn;
-    cursor: pointer;
-  }
-  select {
-    background-color: white;
-    appearance: none;
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  ul {
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  body {
     margin: 0;
-  }
-  input, button {
-    outline: none;
-    border: none;
-    font-family: iranYekan;
-
-    &::-webkit-inner-spin-button {
-      appearance: none;
-    }
-
-    &::-webkit-outer-spin-button {
-      appearance: none;
-    }
-  }
-  option {
-    direction: rtl;
-  }
-  .loading {
+    padding: 0;
     background-color: white;
-    width: 100%;
-    img {
-      margin: 0 auto;
-      display: block;
-      width: 50%;
-      @media screen and (max-width:1300px){
-        width: 100%;
+    font-family: iranYekan;
+    .swiper-button-next, .swiper-button-prev {
+      color: $navigation-btn;
+      background-color: $form-input-border;
+      padding: 0 4px;
+      width: 2.5rem;
+      opacity: 0.8;
+      height: 2.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    select {
+      background-color: white;
+      appearance: none;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul {
+      margin: 0;
+    }
+    input, button {
+      outline: none;
+      border: none;
+      font-family: iranYekan;
+
+      &::-webkit-inner-spin-button {
+        appearance: none;
+      }
+
+      &::-webkit-outer-spin-button {
+        appearance: none;
       }
     }
-  } .icon-container{
-    margin: 0 auto;
+    option {
+      direction: rtl;
+    }
+    .loading {
+      background-color: white;
+      width: 100%;
+      img {
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+        @media screen and (max-width:1300px){
+          width: 100%;
+        }
+      }
+    } .icon-container{
+        margin: 0 auto;
+      }
   }
 }
+

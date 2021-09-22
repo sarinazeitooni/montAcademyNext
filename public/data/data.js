@@ -443,3 +443,8 @@ export const login = {
     signUp: 'ثبت نام در منتا'
 }
 export const icons = ['180', '152', '167', '120'];
+export const units = {
+    toman : 'تومان',
+    session : 'جلسه'
+
+};

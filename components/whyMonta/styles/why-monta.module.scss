@@ -70,9 +70,6 @@
               margin: 10px auto;
             }
           }
-          &.selected{
-            background-color: $submit-btn !important;
-          }
           @media screen and (max-width: 1024px) {
             font-size: 12px;
             padding: 0 10px;
@@ -133,3 +130,7 @@
     }
   }
 }
+.selected{
+  @extend .options;
+   background-color: $submit-btn !important;
+ }

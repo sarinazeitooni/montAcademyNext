@@ -5,6 +5,7 @@ import Modal from "./modal/Modal";
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
 import {GetInfotexts} from "../../public/data/data";
+import {validMobile} from "./regex/Moile";
 const GetInfoForm = () => {
     const [show , setShow] = useState(false);
     const [name,setName] = useState('');
@@ -19,7 +20,7 @@ const GetInfoForm = () => {
     function Validation(){
         if(name!==''){
             setNameClass(style['']);
-            if(number!=='' && number.length === 11 && number.charAt(0)=== '0'){
+            if(number!=='' && validMobile.test(number)){
                 setNumberClass(style['']);
                 if(option!==0){
                     setOptionClass(style[''])

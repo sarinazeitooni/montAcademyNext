@@ -1,6 +1,6 @@
 import React from "react";
 import style from './styles/class-card.module.scss';
-import {classCardIcons} from "../../../public/data/data";
+import {classCardIcons , units} from "../../../public/data/data";
 const ClassCard = ({data}) => {
     return (
         <div className={style['card']}>
@@ -15,10 +15,10 @@ const ClassCard = ({data}) => {
                         <div className={style['session']}><img alt='session' src={classCardIcons.sessions}/><span>{data.sessionNumber} جلسه </span></div>
                     </div>
                     <div className={style['price-container']}>
-                        <div className={style['price']}>{data.priceWithOutOff}تومان</div>
+                        <div className={style['price']}>{data.priceWithOutOff}{units.toman}</div>
                         <div className={style['second-price']}>
                             <span className={style['second-price-num']}>{data.priceWithOff} </span>
-                            <span>تومان</span>
+                            <span>{units.toman}</span>
                         </div>
                     </div>
                 </div>

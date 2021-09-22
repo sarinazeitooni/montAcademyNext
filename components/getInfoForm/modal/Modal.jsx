@@ -19,14 +19,14 @@ function Modal({show, close}) {
     function Validation() {
         if(name!==''){
             setNameClass(style['item']);
-            if(number!=='' && number.length === 11 && number.charAt(0)=== '0'){
+            if(number!=='' && number.length === 11 && number.charAt(0)=== '0' && number.charAt(1)=== '9' ){
                 setNumberClass(style['item']);
                 if(option!==0){
                     setOptionClass(style['options'])
                     Submit();
-                }else setOptionClass(style['error','options'])
-            }else setNumberClass(style['error','item']);
-        }else setNameClass(style['error','item']);
+                }else setOptionClass(style['error'])
+            }else setNumberClass(style['error']);
+        }else setNameClass(style['error']);
     }
     function Submit() {
         setName('');

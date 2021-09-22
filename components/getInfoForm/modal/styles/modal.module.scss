@@ -61,7 +61,7 @@
     .options {
       color: $navigation-btn;
       margin: 17px auto 25px auto;
-      width: 92.5%;
+      width: 86%;
     }
     .buttons {
       text-align: center;
@@ -90,4 +90,10 @@
       }
     }
   }
+}
+.error{
+  @extend .item;
+  @extend .options;
+  height: 42px !important;
+  border: 2px solid red!important;
 }
