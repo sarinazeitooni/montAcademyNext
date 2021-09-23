@@ -17,7 +17,7 @@ const WhyMonta = ({title, data}) => {
                     <div className={style['item-container']}>
                         {data.map((item) => {
                             return (
-                                <div className={index + 1 === item.index ? style['selected'] :style['options']}
+                                <div className={`${index + 1 === item.index ? style['selected'] : ''}  ${style['options']}`}
                                      onClick={() => {
                                          urlHandler(item.index)
                                      }} key={item.index}>

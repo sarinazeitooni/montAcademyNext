@@ -64,6 +64,9 @@
           background-color: $form-input-border;
           margin: 15px 0;
           cursor: pointer;
+          &.selected{
+            background-color: $submit-btn !important;
+          }
           &:first-child{
             margin: 0;
             @media screen and (max-width: 768px) {
@@ -130,7 +133,3 @@
     }
   }
 }
-.selected{
-  @extend .options;
-   background-color: $submit-btn !important;
- }
