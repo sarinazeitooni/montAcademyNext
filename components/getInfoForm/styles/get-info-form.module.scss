@@ -121,13 +121,21 @@
             }
         }
         .submit{
+            user-select: none;
             @media screen and (max-width: 768px) {
                 margin: 0 auto;
                 display: none;
             }
+            &:hover {
+                opacity: 0.8;
+            }
+            &:active{
+                opacity: 1;
+            }
         }
         .submit-mobile{
             display: none;
+            user-select: none;
             @media screen and (max-width: 768px) {
                 margin: 0 auto;
                 display: block;
@@ -138,4 +146,7 @@
 .error{
     height: 42px !important;
     border: 2px solid red!important;
+}
+.custom-option{
+    display: none !important;
 }

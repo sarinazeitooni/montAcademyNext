@@ -12,7 +12,7 @@ const ClassCard = ({data}) => {
                 <div className={style['container']}>
                     <div className={style['name-session-container']}>
                         <div className={style['name']}><img alt='profile' src={classCardIcons.profile}/><span>{data.teacherName}</span></div>
-                        <div className={style['session']}><img alt='session' src={classCardIcons.sessions}/><span>{data.sessionNumber} جلسه </span></div>
+                        <div className={style['session']}><img alt='session' src={classCardIcons.sessions}/><span>{data.sessionNumber} {units.session} </span></div>
                     </div>
                     <div className={style['price-container']}>
                         <div className={style['price']}>{data.priceWithOutOff}{units.toman}</div>

@@ -7,10 +7,7 @@ SwiperCore.use([Navigation,Autoplay]);
 const BannerSwiper = ({images}) => {
     return (
         <div className={style['banner-swiper-container']}>
-            <Swiper
-                spaceBetween={1} slidesPerView={1} navigation={true} autoplay={{
-                "delay": 3000
-            }}>
+            <Swiper spaceBetween={1} slidesPerView={1} navigation={true} autoplay={{"delay": 3000}}>
                 {
                     images.map((item)=>{
                         return(

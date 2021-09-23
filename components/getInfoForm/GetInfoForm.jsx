@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import style from './styles/get-info-form.module.scss';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import Modal from "./modal/Modal";
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
 import {GetInfotexts} from "../../public/data/data";
 import {validMobile} from "./regex/Moile";
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 const GetInfoForm = () => {
     const [show , setShow] = useState(false);
     const [name,setName] = useState('');
@@ -62,13 +64,18 @@ const GetInfoForm = () => {
                            onChange={(e)=>{ChangeHandler(setNumber,e )}}  placeholder={GetInfotexts.mobileInput}/>
                 </div>
                 <div className={style['data-fields']}>
-                    <ArrowDropDownIcon/>
-                    <select value={option} className={optionClass} onChange={(e)=>{ChangeHandler(setOption,e)}}>
-                        {GetInfotexts.selectOptions.map((item) => {
-                            return (<option key={item.text} value={item.value} className={style['custom-option']}>{item.text}</option>)
-                        })}
-                        <option className={style['custom-option']} value={0} hidden>{GetInfotexts.selectTitle}</option>
-                    </select>
+                    <FormControl variant="standard">
+                        <Select defaultValue={option}
+                            value={option}
+                            label={GetInfotexts.selectTitle}
+                            className={optionClass}
+                            onChange={(e)=>{ChangeHandler(setOption,e)}}>
+                            {GetInfotexts.selectOptions.map((item) => {
+                                return (<MenuItem key={item.text} value={item.value}>{item.text}</MenuItem>)
+                            })}
+                            <MenuItem  className={style['custom-option']} value={0} unselectable={true}>{GetInfotexts.selectTitle}</MenuItem>
+                        </Select>
+                    </FormControl>
                 </div>
                 <div onClick={(e)=>{Validation()}} className={style['data-fields','submit']}>{GetInfotexts.submit}</div>
                 <div onClick={()=>{setShow(true)}} className={style['data-fields','submit-mobile']}>{GetInfotexts.submit}</div>

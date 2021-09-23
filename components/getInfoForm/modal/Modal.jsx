@@ -68,11 +68,7 @@ function Modal({show, close}) {
                         ChangeHandler(setOption, e)
                     }} id='options'>
                         {GetInfotexts.selectOptions.map((item) => {
-                            re
-
-
-
-                            turn (<option key={item.text} value={item.value} className={style['option']}>{item.text}</option>)
+                            return (<option key={item.text} value={item.value} className={style['option']}>{item.text}</option>)
                         })}
                         <option className={style['option']} value={0} hidden>{GetInfotexts.selectTitle}</option>
                     </select>

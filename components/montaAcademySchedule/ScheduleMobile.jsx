@@ -11,10 +11,8 @@ const ScheduleMobile = ()=>{
                 <div className={style['subtitle']}>
                     {MontAcademyScheduleTexts.subtitle}
                 </div>
-                <a download href='../../public/data/schedule.pdf'>
-                    <div className={style['get-btn']}>
+                <a className={style['get-btn']} download href='../../public/data/schedule.pdf'>
                         {MontAcademyScheduleTexts.btn}
-                    </div>
                 </a>
             </div>
         </React.Fragment>

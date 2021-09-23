@@ -38,6 +38,43 @@ html {
       border-radius: 50%;
       cursor: pointer;
     }
+    .MuiInput-root{
+      width: 307px;
+      background-color: white;
+      border-radius: 16px;
+      height: 42px;
+      &:before{
+        display: none;
+      }
+      &:after{
+        display: none;
+      }
+      @media screen and (max-width:1800px){
+        width: 225px;
+      }
+      @media screen and (max-width:1024px){
+        width: 215px;
+      }
+      @media screen and (max-width:1000px){
+        width: 145px;
+      }
+    }
+    .MuiFormControl-root{
+      @media screen and (max-width:768px){
+        display: none;
+      }
+    }
+    .MuiSelect-standard , .MuiInputLabel-root , .MuiMenuItem-root{
+      font-size: 14px;
+      direction: rtl;
+      font-family: iranYekan;
+    }
+    .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input{
+      &:focus{
+        border-radius: 16px;
+        background-color: white;
+      }
+    }
     select {
       background-color: white;
       appearance: none;
