@@ -35,7 +35,7 @@ const Classes = ({title, extraTitle, mobileTitle, cards}) => {
                 <h2 className={style['class-title']}> {title} </h2>
                 <h3>{mobileTitle}</h3>
                 <span data-tip={extraTitle} className={style['class-extraTitle']}> {extraTitle} </span>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor='#143fdd'/>
             </div>
             <hr className={style['line']}/>
             <div className={style['cards-container']}>

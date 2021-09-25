@@ -73,6 +73,10 @@
         }
         .link {
           padding:9px 5px;
+          cursor: pointer;
+          &:hover{
+            color: $link-hover;
+          }
           @media screen and (max-width:768px){
             font-size: 10px;
             &:nth-child(4){

@@ -395,12 +395,23 @@ export const FooterData = {
         {
             title: 'ما را دنبال کنید!',
             icons: [
-                'https://www.monta.ir/landings/Footer//Instagram.svg',
-                'https://www.monta.ir/landings/Footer//telegram.svg',
-                'https://www.monta.ir/landings/Footer//aparat.svg',
-                'https://www.monta.ir/landings/Footer//Linkedin.svg'
+                {
+                    href: "https://www.instagram.com/montaonline/",
+                    src: 'https://www.monta.ir/landings/Footer//Instagram.svg'
+                },
+                {
+                    href: 'https://t.me/montaonline',
+                    src: 'https://www.monta.ir/landings/Footer//telegram.svg'
+                },
+                {
+                    href: 'https://www.aparat.com/monta',
+                    src: 'https://www.monta.ir/landings/Footer//aparat.svg'
+                },
+                {
+                    href: '"https://www.linkedin.com/company/montaedu"',
+                    src: 'https://www.monta.ir/landings/Footer//Linkedin.svg'
+                }
             ]
-
         }
     ],
     Enamad: 'https://www.monta.ir/landings/Footer//Enamad.PNG',
@@ -444,7 +455,7 @@ export const login = {
 }
 export const icons = ['180', '152', '167', '120'];
 export const units = {
-    toman : 'تومان',
-    session : 'جلسه'
+    toman: 'تومان',
+    session: 'جلسه'
 
 };

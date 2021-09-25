@@ -11,7 +11,7 @@ import FooterContainer from "../components/footer/FooterContainer";
 import {v4 as uuidv4} from "uuid";
 export default function MontAcademy() {
     const [time,setTime] = React.useState(false);
-    setTimeout(function(){ setTime(true) }, 1500);
+    setTimeout(function(){ setTime(true) }, 500);
     return (
         <div>
             <Head>
