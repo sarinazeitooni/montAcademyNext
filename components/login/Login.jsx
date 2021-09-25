@@ -1,11 +1,17 @@
 import React from "react";
 import style from './style/login.module.scss';
+import {useSelector, useDispatch} from "react-redux";
+// import remember from "../../redux/actions/remember";
 const Login = ({data}) => {
-    const [remember, setRemember] = React.useState( typeof window !== 'undefined' && !JSON.parse(localStorage.getItem('remember')));
-    function changeHandler(){
-        setRemember(!remember);
-        localStorage.setItem('remember',JSON.stringify(remember));
+    const rememberValue = useSelector(state => state.remember);
+    const dispatch = useDispatch();
+
+    function changeHandler() {
+        dispatch({
+            type: "remember"
+        });
     }
+
     return (
         <div className={style['login-container']}>
             <img alt='login' src='https://www.monta.ir/client_resources/images/img/monta-color.png'/>
@@ -22,7 +28,9 @@ const Login = ({data}) => {
                 {data.login}
             </button>
             <div className={style['remember-container']}>
-                <input checked={remember} onChange={()=>{changeHandler()}} className={style['remember-check']} id='remember-check' name='remember-check' type='checkbox'/>
+                <input checked={rememberValue} onChange={() => {
+                    changeHandler()
+                }} className={style['remember-check']} id='remember-check' name='remember-check' type='checkbox'/>
                 <label htmlFor='remember-check'>{data.remember}</label>
             </div>
             <div className={style['new-member-container']}>

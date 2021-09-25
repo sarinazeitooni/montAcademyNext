@@ -24,6 +24,7 @@
     display: inline;
   }
   .forgot-password {
+    user-select: none;
     display: inline;
     text-align: left;
     font-size: 10.2px;
@@ -72,6 +73,7 @@
     font-size: 12px;
     .sign-up {
       cursor: pointer;
+      user-select: none;
       padding-right: 5px;
       color: $forgot-pass;
     }
