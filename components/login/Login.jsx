@@ -21,7 +21,7 @@ const Login = ({data}) => {
             <img alt='login' src='https://www.monta.ir/client_resources/images/img/monta-color.png'/>
             <div className={style['input-container']}>
                 <div className={style['input-title']}>{data.user}</div>
-                <input type='text' defaultValue={usernameValue} onChange={(e)=>{
+                <input type='text' defaultValue={rememberValue ? usernameValue : ''} onChange={(e)=>{
                     inputHandler(e.target.value)
                 }} placeholder={data.userPlaceHolder}/>
             </div>
