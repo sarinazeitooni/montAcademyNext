@@ -68,9 +68,8 @@
             background-color: $submit-btn !important;
           }
           &:last-child{
-            margin: 0;
-            @media screen and (max-width:768px){
-              margin: 15px 2%;
+            @media screen and (min-width:770px){
+              margin: 0;
             }
           }
           &:first-child{

@@ -30,12 +30,12 @@ html {
     font-family: iranYekan;
     .swiper-button-next, .swiper-button-prev {
       color: $navigation-btn;
-      background-color: $form-input-border;
+      background-color: $arrow-back;
       padding: 0 4px;
-      width: 2.5rem;
-      opacity: 0.8;
-      height: 2.5rem;
-      border-radius: 50%;
+      width: 2.3rem;
+      opacity: 0.6;
+      height: 2.3rem;
+      border-radius: 20%;
       cursor: pointer;
     }
     .MuiInput-root{

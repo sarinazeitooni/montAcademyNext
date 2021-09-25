@@ -11,9 +11,9 @@ const Login = ({data}) => {
         });
     }
     function inputHandler(data){
-        rememberValue && dispatch({
+        dispatch({
             type: 'username',
-            payload: data
+            payload: rememberValue ? data : ''
         });
     }
     return (

@@ -18,15 +18,14 @@ const Classes = ({title, extraTitle, mobileTitle, cards}) => {
         query: '(min-width: 1220px)'
     });
     function size(){
-        if(isSmall){
+        if(isSmall)
             return (2);
-        }else{
-            if(isMedium){
+        else{
+            if(isMedium)
                 return (3)
-            }else{
-                if(isBig){
+            else{
+                if(isBig)
                     return (4)
-                }
             }
         }
     }
