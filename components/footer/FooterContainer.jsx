@@ -1,13 +1,16 @@
 import React from "react";
 import style from './styles/footer.module.scss';
 import {FooterBottom} from "./FooterBottom";
+
 const FooterContainer = ({data}) => {
     return (
         <div className={style['footer-container']} id='footer'>
             <div className={style['columns-container']}>
                 <div className={style['column']}>
-                    <img alt='monta-footer' className={style['monta']} src='https://www.monta.ir/landings/Footer//Monta_Footer.svg'/>
-                    <img alt='monta-footer-mobile' className={style['monta-mobile']} src='https://www.monta.ir/landings/Footer//Monta%20Logo%20-%20landscape.svg'/>
+                    <img alt='monta-footer' className={style['monta']}
+                         src='https://www.monta.ir/landings/Footer//Monta_Footer.svg'/>
+                    <img alt='monta-footer-mobile' className={style['monta-mobile']}
+                         src='https://www.monta.ir/landings/Footer//Monta%20Logo%20-%20landscape.svg'/>
                 </div>
                 {
                     data.columns.map((item) => {
@@ -21,7 +24,8 @@ const FooterContainer = ({data}) => {
                                         )
                                     })}
                                 </div>}
-                                {item.title === data.columns[2].title && <div className={style['column-title-mobile']}>{data.columns[2].title}</div>}
+                                {item.title === data.columns[2].title &&
+                                <div className={style['column-title-mobile']}>{data.columns[2].title}</div>}
                                 {item.icons && <div className={style['icons-container']}>
                                     {item.icons.map((icon) => {
                                         return (
@@ -29,7 +33,8 @@ const FooterContainer = ({data}) => {
                                         )
                                     })}
                                 </div>}
-                                {item.title === data.columns[2].title && <div className={style['column-mobile']}><img alt='etemad' src={data.Enamad}/></div>}
+                                {item.title === data.columns[2].title &&
+                                <div className={style['column-mobile']}><img alt='etemad' src={data.Enamad}/></div>}
                                 {item.communication && <div className={style['communication-container']}>
                                     <div className={style['tel-and-email']}>
                                         <span>
@@ -50,7 +55,7 @@ const FooterContainer = ({data}) => {
                         )
                     })
                 }
-                <div className={['column','etemad']}>
+                <div className={style['column','etemad']}>
                     <img alt='etemad' src={data.Enamad}/>
                 </div>
             </div>

@@ -24,9 +24,7 @@ const WhyMonta = ({title, data}) => {
                             )
                         })}
                     </div>
-                    <div className={style['item-img']}>
-                        <img alt='whymonta' src={data[index].url}/>
-                    </div>
+                    <div style={{background: `url("${data[index].url}")`}} className={style['item-img']}/>
                 </div>
             </div>
         </div>

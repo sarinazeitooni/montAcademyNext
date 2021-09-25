@@ -4,6 +4,7 @@ import ClassCard from "../classCard/ClassCard";
 import {Swiper , SwiperSlide} from "swiper/react";
 import SwiperCore, {Navigation} from 'swiper';
 import {v4 as uuidv4} from "uuid";
+import ReactTooltip from "react-tooltip";
 import {useMediaQuery} from 'react-responsive';
 SwiperCore.use([Navigation]);
 const Classes = ({title, extraTitle, mobileTitle, cards}) => {
@@ -34,12 +35,12 @@ const Classes = ({title, extraTitle, mobileTitle, cards}) => {
             <div className={style['text-container']}>
                 <h2 className={style['class-title']}> {title} </h2>
                 <h3>{mobileTitle}</h3>
-                <span className={style['class-extraTitle']}> {extraTitle} </span>
+                <span data-tip={extraTitle} className={style['class-extraTitle']}> {extraTitle} </span>
+                <ReactTooltip />
             </div>
             <hr className={style['line']}/>
             <div className={style['cards-container']}>
-                <Swiper
-                    spaceBetween={1} slidesPerView={size()}  navigation={cards.length>4 || isMedium || isSmall}>
+                <Swiper slidesPerView={size()} navigation={cards.length>4 || isMedium || isSmall}>
                     {
                         cards.map((index) => {
                             return (
