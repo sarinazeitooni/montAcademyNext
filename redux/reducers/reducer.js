@@ -1,5 +1,6 @@
 const initialState = {
-    remember: true
+    remember: true,
+    username : ''
 };
 
 function reducer(state = initialState, action) {
@@ -8,6 +9,11 @@ function reducer(state = initialState, action) {
             return {
                 ...state,
                     remember: !state.remember
+            }
+        case 'username' :
+            return {
+                ...state,
+                username: action.payload
             }
         default:
             return state

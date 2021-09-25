@@ -1,4 +1,5 @@
 const actionTypes={
-    Remember : 'remember'
+    Remember : 'remember',
+    UserName : 'username'
 }
 export default actionTypes;

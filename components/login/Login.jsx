@@ -1,23 +1,29 @@
 import React from "react";
 import style from './style/login.module.scss';
 import {useSelector, useDispatch} from "react-redux";
-// import remember from "../../redux/actions/remember";
 const Login = ({data}) => {
     const rememberValue = useSelector(state => state.remember);
+    const usernameValue = useSelector(state => state.username);
     const dispatch = useDispatch();
-
     function changeHandler() {
         dispatch({
-            type: "remember"
+            type: 'remember'
         });
     }
-
+    function inputHandler(data){
+        rememberValue && dispatch({
+            type: 'username',
+            payload: data
+        });
+    }
     return (
         <div className={style['login-container']}>
             <img alt='login' src='https://www.monta.ir/client_resources/images/img/monta-color.png'/>
             <div className={style['input-container']}>
                 <div className={style['input-title']}>{data.user}</div>
-                <input type='text' placeholder={data.userPlaceHolder}/>
+                <input type='text' defaultValue={usernameValue} onChange={(e)=>{
+                    inputHandler(e.target.value)
+                }} placeholder={data.userPlaceHolder}/>
             </div>
             <div className={style['input-container']}>
                 <div className={style['input-title']}>{data.password}</div>

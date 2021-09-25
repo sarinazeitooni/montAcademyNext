@@ -3,10 +3,9 @@ import reducer from "../reducers/reducer";
 import logger from 'redux-logger';
 import {persistStore, persistReducer} from "redux-persist";
 import storage from "redux-persist/lib/storage";
-const state= {};
 
 const persistConfig = {
-    key: "remember",
+    key: "login",
     storage,
 };
 
