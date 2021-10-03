@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import style from './style/login.module.scss';
 import {useSelector, useDispatch} from "react-redux";
+import ReCAPTCHA from 'react-google-recaptcha';
 const Login = ({data}) => {
     const rememberValue = useSelector(state => state.remember);
     const usernameValue = useSelector(state => state.username);
@@ -56,7 +57,7 @@ const Login = ({data}) => {
                     <span className={style['sign-up']}>{data.signUp}</span>
                 </div>
             </div>
-            <div className="g-recaptcha" data-sitekey={SITE_KEY} data-callback='onSubmit'/>
+            <ReCAPTCHA size="normal" sitekey="6LcFg6YcAAAAAERg9CmELMFDmcnytu14pie2xsR7" />
         </React.Fragment>
 )
 }
